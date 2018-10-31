@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', function () {
+    return 'Tela de login';
+});
+
+Route::get('/cadastrar', function () {
+    return 'cadastro de socio <br>
+    		cadastro de clube <br>
+    		cadastro de contas';
+});
+
+Route::get('/cadastrar/clube', 'CadastroController@cadastrarClube');
