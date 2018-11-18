@@ -1,3 +1,7 @@
-<div class="alert alert-success" role="alert">
-  Isso é conteúdo de um componente
+<div class="alert alert-{{$tipo}}" role="alert">
+	<div class= "alert-title"> 
+		{{$titulo}}
+
+	</div>
+	{{$slot}}
 </div>

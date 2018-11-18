@@ -7,6 +7,14 @@
 <body>
 
 	@component('components.meucomponente')
+		<strong>Erro: </strong> Uma mensagem de erro
+		@slot('titulo')
+			Erro fatal
+		@endslot
+
+		@slot('tipo')
+			danger
+		@endslot
 	@endcomponent
 
 <script src="{{asset('js/app.js')}}" type="text/javascript"></script>
