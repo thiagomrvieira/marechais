@@ -26,3 +26,7 @@ Route::get('/cadastrar', function () {
 });
 
 Route::get('/cadastrar/clube', 'CadastroController@cadastrarClube');
+
+Route::get('/pagina', function () {
+    return view('pagina');
+});
