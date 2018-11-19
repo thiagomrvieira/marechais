@@ -30,3 +30,5 @@ Route::get('/cadastrar/clube', 'CadastroController@cadastrarClube');
 Route::get('/pagina', function () {
     return view('pagina');
 });
+
+Route::get('/produtos', 'ProdutoControlador@listar');
