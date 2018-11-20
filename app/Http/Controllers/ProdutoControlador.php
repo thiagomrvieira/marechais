@@ -15,4 +15,12 @@ class ProdutoControlador extends Controller
     	];
     	return view('produtos', compact('produtos'));
     }
+
+    public  function secaoProdutos($palavra){
+    	
+    	return view('secao_produtos', compact('palavra'));
+    }
+
+
+
 }
