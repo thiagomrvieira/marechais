@@ -31,7 +31,7 @@ Route::get('/pagina', function () {
     return view('pagina');
 });
 
-Route::get('/produtos', 'ProdutoControlador@listar');
+Route::get('/produtos', 'ProdutoControlador@listar')->middleware('auth');
 
 Route::get('/secaoprodutos/{palavra}', 'ProdutoControlador@secaoProdutos');
 
@@ -42,3 +42,6 @@ Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
 Route::get('/loop/for/{n}', 'ProdutoControlador@loopFor');
 
 Route::get('/loop/foreach', 'ProdutoControlador@loopForeach');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
